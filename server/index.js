@@ -6,14 +6,14 @@ const RegisterModel = require('./models/Register')
 const app = express()
 app.use(cors(
     {
-        origin: ["https://deploy-mern-frontend.vercel.app"],
+        origin: ["https://mern-deploy-frontend-three.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
 ));
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://yousaf:test123@cluster0.g4i5dey.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://padolkarashwek11:sachintendulkar10@cluster0.i9s5ver.mongodb.net/mern?retryWrites=true&w=majority&appName=Cluster0');
 
 
 app.get("/", (req, res) => {
